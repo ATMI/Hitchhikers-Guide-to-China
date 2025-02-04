@@ -2,7 +2,7 @@
 %! Date = 1/27/25
 
 % Preamble
-\documentclass[11pt]{book}
+\documentclass[openany]{book}
 
 % Packages
 \usepackage{amsmath}
@@ -10,12 +10,16 @@
 % Document
 \begin{document}
 	\title{Hitchhiker's Guide to China}
-	\author{Miasoedov Artemii \\ Brayko Timofey}
+	\author{Brayko Timofey \\ Miasoedov Artemii}
 
 	\maketitle
 	\tableofcontents
 
-	\input{01/chapter}
+	\part[Russia]{Russia}\label{part:russia}
+	\input{russia/01_chapter}
+
+	\part[China]{China}\label{part:china}
+	\input{china/01_chapter}
 
 	\bibliography{main}
 	\bibliographystyle{plain}
