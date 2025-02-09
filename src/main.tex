@@ -6,15 +6,30 @@
 
 % Packages
 \usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage[most]{tcolorbox}
 \usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
 \usepackage{textcomp}
 \usepackage{siunitx}
-\usepackage{float}
 \usepackage{tikz}
 \usepackage{mathtools}
 
-\usetikzlibrary{shapes.geometric, arrows, positioning}
+\newtcolorbox{joke}[1][]{colback=blue!10!white,
+    colframe=blue!80!black,fonttitle=\bfseries,
+    colbacktitle=blue!85!black,enhanced,
+    attach boxed title to top center={yshift=-2mm},
+    title={Giggle Corner}
+}
 
+\newtcolorbox{note}[1][]{colback=yellow!10,
+    colframe=yellow!80!black,
+    fonttitle=\bfseries,enhanced,
+    title={Note}
+}
+
+\usetikzlibrary{shapes.geometric, arrows, positioning}
 \tikzset{every node/.style={node distance=2em}}
 
 \tikzstyle{terminator} = [
@@ -65,7 +80,8 @@ text width=4em,
 	\tableofcontents
 
 	\part[Russia]{Russia}\label{part:ru}
-	\input{01_russia/01_chapter}
+	\input{russia/01_chapter}
+	\input{russia/02_chapter}
 
 	\part[China]{China}\label{part:cn}
 	\input{02_china/01_arrival}
