@@ -2,7 +2,7 @@
 %! Date = 1/27/25
 
 % Preamble
-\documentclass[11pt,openany]{book}
+\documentclass[11pt,a4paper]{report}
 
 % Packages
 \usepackage{amsmath}
@@ -10,6 +10,51 @@
 \usepackage{textcomp}
 \usepackage{siunitx}
 \usepackage{float}
+\usepackage{tikz}
+\usepackage{mathtools}
+
+\usetikzlibrary{shapes.geometric, arrows, positioning}
+
+\tikzset{every node/.style={node distance=2em}}
+
+\tikzstyle{terminator} = [
+rectangle,
+draw,
+text centered,
+rounded corners,
+%	minimum width=5em,
+minimum height=2.5em,
+text width=6em,
+]
+
+\tikzstyle{process} = [
+rectangle,
+draw,
+text centered,
+minimum height=3em,
+text width=6em,
+]
+
+\tikzstyle{decision} = [
+diamond,
+draw,
+text centered,
+aspect=2,
+minimum height=3em,
+minimum width=12em,
+text width=6em,
+]
+
+\tikzstyle{data} = [
+trapezium,
+draw,
+text centered,
+trapezium left angle=60,
+trapezium right angle=120,
+minimum height=3em,
+text width=4em,
+]
+\tikzstyle{arrow} = [thick,--]
 
 % Document
 \begin{document}
