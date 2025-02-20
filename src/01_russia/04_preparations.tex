@@ -1,0 +1,131 @@
+%! Author = t
+%! Date = 2025-02-20
+
+
+
+\newcommand{\applinks}[2][]{
+    \ifthenelse{\equal{#1}{}}
+        {\href{#2}{PlatMarket}}
+        {\href{#2}{PlatMarket}, \href{#1}{AppStore}}% If second parameter exists, return both
+}
+
+\chapter{Mobile Apps}\label{ch:ru_apps}
+
+It's highly recommended to install several apps on your phone in advance!
+List of all recommendations with links you can find in the end of this section.
+
+
+\section{VPN}\label{subsec:ru_vpn}
+China is famous for its \href{https://en.wikipedia.org/wiki/Great_Firewall}{Firewall},
+so you better be ready to use VPN daily!
+Here's a short list of banned websites and apps:
+
+\begin{multicols}{2}
+\begin{itemize}
+    \item Telegram
+    \item What's App
+    \item Wikipedia
+    \item Google
+    \item YouTube
+    \item Reddit
+    \item StackOverflow
+    \item GitHub (not banned, but really slow)
+    \item HuggingFace
+\end{itemize}
+\end{multicols}
+
+\begin{enumerate}
+    \item \textbf{Install N different VPNs on your phone.}
+        One day your VPN might work well, but the other it won't connect at all.
+        And the opposite situation might be for other VPN app.
+
+    \item \textbf{Install Tor/TorBrowser} on your phone and laptop.
+        It maybe not the fastest solution, but at least most stable option among free solutions.
+        Telegram Bot for Bridges: \href{https://t.me/GetBridgesBot}{@GetBridgesBot}
+
+    \item \textbf{Personal Server}.
+        You can also configure your proxy server.
+        Using the VLESS protocol is highly recommended, as other options might be banned immediately by Chinese Firewall.
+\end{enumerate}
+
+
+
+
+\section[Chinese Apps]{Chinese Apps}\label{sec:chinese-apps}
+If you use IPhone, you can skip this Section!
+
+Most of the following applications are Chinese,
+and not all can be downloaded from the Play Market.
+Therefore, you will often have to download applications from the Internet.
+
+An alternative to this is to download the Chinese Tencent AppStore (Install it by yourown).
+Of course, Chinese apps are nightmare, but it's still a solution
+if you don't want to suffer with installation via the Internet.
+
+
+
+
+\section[Messanger and Payments]{Messanger and Payments}\label{sec:messanger-and-payments}
+
+\begin{itemize}
+    \item \textbf{WeChat}.
+    Allows message, buy tickets, order food, read news and so on.
+    However, to register, a Chinese person must verify your account using a QR code.
+    But still download the app in advance and try to register,
+    maybe you'll be lucky enough to enter without a QR code.
+    Otherwise, just postpone it until you arrive in China.
+
+    \item \textbf{AliPay}.
+    The most affordable option for paying application fee.
+    In China, it mostly used among foreigners for payment, but accepted everywhere.
+    First time you can use it for chatting too!
+\end{itemize}
+
+
+
+
+\section[Maps]{Maps}\label{sec:ru_maps}
+
+Google is banned and Yandex Maps almost useless, but you need somehow navigate in China.
+
+
+\begin{itemize}
+    \item \textbf{Chinese Apps} like AMap.
+        However, it supports only Chinese language.
+
+    \item \textbf{OpenSource solutions} like \href{https://maps.me/}{Maps.Me} or \href{https://osmand.net/}{OsmAnd}.
+        Help you to navigate around, but won't tell what's in mall.
+
+    \item \textbf{MetroMan}.
+        It's the most convenient app for Chinese metro.
+        Again mostly developed for foreigners, but works perfect!
+\end{itemize}
+
+
+
+
+\section[Language]{Language}\label{sec:language}
+Translator one of the most crucial tool (unless you know Chinese).
+But Google is banned!
+We recommend to use Yandex Translator and install Chinese Language in advance!
+Also, we recommend to install vocabulary Pleco.
+
+If you're willing to learn some basics of Chinese,
+try to use HelloChinese.
+It's similar to Duolingo, but helps learn Chinese better.
+
+
+
+\section[AppList]{App List}\label{sec:ru_app_list}
+
+\begin{itemize}
+    \item WeChat -- \applinks[https://play.google.com/store/apps/details?id=com.tencent.mm]{https://apps.apple.com/us/app/wechat/id414478124}
+    \item AliPay -- \applinks[https://play.google.com/store/apps/details?id=com.eg.android.AlipayGphone]{https://apps.apple.com/us/app/alipay-simplify-your-life/id333206289}
+    \item Orbot -- \applinks{https://play.google.com/store/apps/details?id=org.torproject.android}
+    \item AMap -- \applinks[https://play.google.com/store/apps/details?id=com.autonavi.minimap]{https://apps.apple.com/us/app/amap-global/id461703208}
+    \item Maps.Me -- \applinks[https://play.google.com/store/apps/details?id=com.mapswithme.maps.pro]{https://apps.apple.com/us/app/maps-me-offline-maps-gps-nav/id510623322}
+    \item MetroMan -- \applinks[https://play.google.com/store/apps/details?id=com.xinlukou.metroman]{https://apps.apple.com/us/app/metroman-china/id466351433}
+    \item Pleco -- \applinks[https://play.google.com/store/apps/details?id=com.pleco.chinesesystem]{https://apps.apple.com/us/app/pleco-chinese-dictionary/id341922306}
+    \item Hello Chinese -- \applinks[https://play.google.com/store/apps/details?id=com.hellochinese]{https://apps.apple.com/us/app/hellochinese-learn-chinese/id1001507516}
+    \item TaoBao -- \applinks[https://play.google.com/store/apps/details?id=com.taobao.taobao]{https://apps.apple.com/us/app/taobao/id387682726}
+\end{itemize}
