@@ -15,6 +15,9 @@
 \usepackage{siunitx}
 \usepackage{tikz}
 \usepackage{mathtools}
+\usepackage{multicol}
+\usepackage{xifthen} % For conditional statements
+
 
 \newtcolorbox{joke}[1][]{colback=blue!10!white,
     colframe=blue!80!black,fonttitle=\bfseries,
@@ -80,13 +83,12 @@ text width=4em,
 	\tableofcontents
 
 	\part[Russia]{Russia}\label{part:ru}
-	\input{01_russia/01_chapter}
-	\input{01_russia/02_chapter}
+	\input{01_russia/01_bit_application}
+	\input{01_russia/02_medical_ref}
+	\input{01_russia/03_visa}
+    \input{01_russia/04_preparations}
+
 
 	\part[China]{China}\label{part:cn}
 	\input{02_china/01_arrival}
-
-	\bibliography{main}
-	\bibliographystyle{plain}
-
 \end{document}
